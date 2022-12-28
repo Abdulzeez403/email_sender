@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+    width: 80%;
+    margin: auto;
+}
+header{
+    text-align: center;
+    font-style: bold;
+}
+form{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+fieldset{
+    margin: 1rem 0 ;
+}
+input{
+    width:100%;
+    padding: .5rem 0;
+}
+.buttonDiv{
+    display: flex;
+    margin: 0;
+   justify-content: end;
+   align-items: center;
+}
+button{
+    background-color: rgb(31, 31, 179);
+    color: white;
+    padding: .6rem 4rem;
+   
+}
