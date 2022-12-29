@@ -1,4 +1,3 @@
-
 // Googleapis
 const { google } = require("googleapis");
 
@@ -6,14 +5,14 @@ const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
 
 const createTransporter = async () => {
-// 1
+  // 1
   const oauth2Client = new OAuth2(
     process.env.OAUTH_CLIENT_ID,
     process.env.OAUTH_CLIENT_SECRET,
     "https://developers.google.com/oauthplayground"
   );
 
-// 2
+  // 2
   oauth2Client.setCredentials({
     refresh_token: process.env.OAUTH_REFRESH_TOKEN,
   });
@@ -27,7 +26,7 @@ const createTransporter = async () => {
     });
   });
 
-// 3
+  // 3
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -40,6 +39,6 @@ const createTransporter = async () => {
     },
   });
 
-// 4
+  // 4
   return transporter;
 };
